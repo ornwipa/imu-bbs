@@ -76,7 +76,7 @@ features_df = pd.DataFrame(columns=[
     "Mean Acceleration X" ,"Mean Acceleration Y", "Mean Acceleration Z"
 ])
 
-base_path = r'C:\Temp\test1'  
+base_path = r'C:\Users\othamsuwan\OneDrive - ETS\etsmtl\papers\imu_balance\imu-bbs\data'  
 
 
 
@@ -175,7 +175,7 @@ for participant_folder in os.listdir(base_path):
                         }])
                         features_df = pd.concat([features_df, new_row], ignore_index=True)
 
-csv_save_path = 'C:/Users/youss/Downloads/result/result2/result2.csv'
+csv_save_path = r'C:\Users\othamsuwan\OneDrive - ETS\etsmtl\papers\imu_balance\imu-bbs\result2.csv'
 features_df.to_csv(csv_save_path, index=False)
 
 

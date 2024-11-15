@@ -6,7 +6,8 @@ import statsmodels.api as sm
 from scipy import stats
 import numpy as np
 
-file_path = 'C:/Users/youss/Downloads/result/result2/result3.csv'
+# file_path = 'C:/Users/youss/Downloads/result/result2/result3.csv'
+file_path = r'C:\Users\othamsuwan\OneDrive - ETS\etsmtl\papers\imu_balance\imu-bbs\result2.csv'
 
 def load_and_preprocess_data(filepath):
     return pd.read_csv(filepath)
@@ -35,11 +36,11 @@ def refine_outlier_removal(data):
 # Preprocess and refine outliers
 data = load_and_preprocess_data(file_path)
 data_clean = refine_outlier_removal(data)
-
+# run up to this point to remove outliers
 
 
 # Data cleaning and categorization
-data_clean['Sensor'] = data_clean['Sensor'].str.lower().replace({'loweback': 'lowerback'})
+data_clean['Sensor'] = data_clean['Sensor'].str.lower().replace({'loweback': 'lowerback'}) # run this too
 data_clean['BBS'] = data_clean['BBS'].fillna(0)
 
 static_tasks = ['task2', 'task3', 'task6', 'task7', 'task13', 'task14']

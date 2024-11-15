@@ -19,11 +19,10 @@ This project aims to evaluate postural balance in older adults using Inertial Me
 To set up the project environment:
 
 1. Ensure you have Python 3.x installed.
-2. Clone the repository:
-git clone https://github.com/yourusername/postural-balance-assessment.git
-cd postural-balance-assessment
-3. Install required dependencies:
-pip install -r requirements.txt
+2. Clone the repository: git clone https://github.com/ornwipa/imu-bbs.git
+3. Go to the folder: cd imu-bbs
+4. Install required dependencies: pip install -r requirements.txt
+
 ## Project Structure
 - `organize-data.py`: Script for organizing raw sensor data.
 - `database1.py`: Processes organized data and extracts features.
